@@ -19,3 +19,9 @@
 body {
   color: #1e1e1e;
 }
+
+header nav{
+    display: flex; /* diaplay flex coloca los elementos horizontales */
+    justify-content: space-between; /*Coloca el espacio entre elementos*/
+    
+}
