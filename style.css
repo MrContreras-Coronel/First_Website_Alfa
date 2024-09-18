@@ -23,5 +23,6 @@ body {
 header nav{
     display: flex; /* diaplay flex coloca los elementos horizontales */
     justify-content: space-between; /*Coloca el espacio entre elementos*/
+    align-items: center;
     
 }
