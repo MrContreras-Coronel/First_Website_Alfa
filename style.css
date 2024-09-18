@@ -1,0 +1,21 @@
+* {
+    padding: unset; 
+    margin: unset;
+    border: unset;
+    text-decoration: unset;
+    
+    /* 16 pixeles cada rem */
+    font-size: 1rem;
+    /* regular: 400, 900 black, 800 la negrota, negrita 700*/
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    /* Propiedad muy importante*/
+    box-sizing: border-box;
+
+   /* margin y Padding automatizados*/
+}
+
+body {
+  color: #1e1e1e;
+}
