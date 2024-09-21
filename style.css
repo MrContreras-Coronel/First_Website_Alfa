@@ -1,12 +1,12 @@
 /*Variables de Css se escriben dentro de root*/
 :root {
     --margin-page: 60px;
-    --color-primary: #2EB76E;
+    --color-primary: #3da16c;
     --color-action: #422F95;
     --color-white: #FFFFFF;
     --brownie: #AD5A5A;
     --color-ch: red;
-    --jumbotron-image1: url("Section.jpg");
+    --jumbotron-image1: url("/Section.jpg");
     --jumbo-title: 56px;
     --textfocus-color: #70F6BE;
 }
@@ -64,13 +64,54 @@ body {
   text-align: center;
   justify-content: center;
   font-weight: 700;
+ 
+}
+.jumbo2{
+  background-image: url("/assets/jumbo.jpg"); 
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  padding: var(--margin-page);
+  font-size: var(--jumbo-title);
+  text-align: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--color-white);
 }
 
 
 .tarjetas{
   font-family: Roboto, sans-serif;
   font-size: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 14px, var(--margin-page);
+  
 }
+.tarjeta{
+  padding: 14px 16px;
+  align-items: end;
+  justify-content: center;
+  
+.tarjeta img{
+  display: flex;
+  padding: 14px;
+}
+}
+nav button {
+  padding: 1rem;
+  border-radius: 15px; /*No lo esta aplicando*/
+  background-color: var(--color-action);
+  color: var(--color-white);
+}
+
+a{
+  color: var(--color-white);
+}
+
 
 /* 
 @font-face{
