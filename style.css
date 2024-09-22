@@ -9,6 +9,7 @@
     --jumbotron-image1: url("/Section.jpg");
     --jumbo-title: 56px;
     --textfocus-color: #70F6BE;
+    --jumbosize:600px;
 }
 
 * {
@@ -55,7 +56,7 @@ body {
   background-image: var(--jumbotron-image1); 
   background-size: cover;
   background-position: center;
-  height: 600px;
+  height: var(--jumbosize);
   display: flex;
   align-items: center;
   padding: var(--margin-page);
@@ -70,37 +71,52 @@ body {
   background-image: url("/assets/jumbo.jpg"); 
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: var(--jumbosize);
   display: flex;
   align-items: center;
   padding: var(--margin-page);
-  font-size: var(--jumbo-title);
   text-align: center;
   justify-content: center;
-  font-weight: 700;
-  color: var(--color-white);
 }
 
+.jumbo2 h1{
+  font-size: var(--jumbo-title);
+  color: var(--color-white);
+  font-weight: 600;
+  background-color: var(--color-action);
+  padding: 2rem;
+  border-radius: 15px;
+}
 
 .tarjetas{
-  font-family: Roboto, sans-serif;
-  font-size: 1rem;
+
+
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
   padding: 14px, var(--margin-page);
   
 }
-.tarjeta{
+.tarjeta h2, .tarjeta p, .tarjeta button{
+  border-radius: 15px;
+  font-size: 1rem;
+  font-style: black;
+  font-family: Roboto, sans-serif;
   padding: 14px 16px;
   align-items: end;
   justify-content: center;
+  text-align: center;
+}
+.tarjeta{
+  justify-content: center;
+}
   
 .tarjeta img{
   display: flex;
   padding: 14px;
+  
 }
-}
+
 nav button {
   padding: 1rem;
   border-radius: 15px; /*No lo esta aplicando*/
@@ -112,8 +128,33 @@ a{
   color: var(--color-white);
 }
 
-
+.foo{
+  background-color: var(--color-primary);
+  height: 200px;
+  
+}
+.foo div{
+  padding: 50px;
+  align-items: center;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--color-white);
+  background-size: cover;  
+}
+.foo div h2{
+  font-weight: 500;
+  font-style: bold;
+  font-size: larger; 
+}
+.foo div img{
+  padding: 10px;
+  justify-content: cente;
+}
 /* 
+
+para enfilarlos flex-direction 
+
 @font-face{
 font-family: fiat;
 url: (direccion fuentes)
