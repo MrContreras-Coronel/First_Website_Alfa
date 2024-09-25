@@ -97,7 +97,7 @@ body {
   padding: 14px, var(--margin-page);
   
 }
-.tarjeta h2, .tarjeta p, .tarjeta button{
+.tarjeta h2, .tarjeta p{
   border-radius: 15px;
   font-size: 1rem;
   font-style: black;
@@ -108,13 +108,29 @@ body {
   text-align: center;
 }
 .tarjeta{
-  justify-content: center;
+  justify-content: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  /*text-align: center;*/
 }
   
 .tarjeta img{
   display: flex;
   padding: 14px;
   
+}
+
+.tarjeta button{
+  background-color: var(--color-primary);
+  color: white;
+  padding: 10px;
+  width: 50%;
+  border-radius: 12px;
+  /*margin: 0 auto;
+  display: block; */
+
 }
 
 nav button {
@@ -147,9 +163,9 @@ a{
   font-style: bold;
   font-size: larger; 
 }
-.foo div img{
-  padding: 10px;
-  justify-content: cente;
+.foo div {
+  padding: 30px;
+  text-align: center;
 }
 /* 
 
