@@ -45,6 +45,13 @@ body {
     background-color: var(--color-primary);
 }
 
+header{
+  position: sticky;
+  top:0;
+  z-index: 50;
+}
+
+
 .main-navbar ul {
   display:flex;
   justify-content:space-between;
@@ -53,9 +60,6 @@ body {
 }
 
 .Jumbotron1{
-  background-image: var(--jumbotron-image1); 
-  background-size: cover;
-  background-position: center;
   height: var(--jumbosize);
   display: flex;
   align-items: center;
@@ -65,8 +69,17 @@ body {
   text-align: center;
   justify-content: center;
   font-weight: 700;
+  perspective: 1000px;
 }
 
+
+.Jumbotron1P{
+  display: flex;
+  background-image: var(--jumbotron-image1); 
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
 /*
   Acuerdate de agregar efectos al img
  Display Grid
@@ -116,6 +129,8 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 15px;
+
+
   /*text-align: center;*/
 }
   
