@@ -5,3 +5,11 @@ desarrollador quiero aprender Node, Go, Sql y todo para irme de aqui estoy cansa
 Nuevo commit
 // para padding rem para texto rem
 // porcentaje para lo demas
+// Pseudoclases: Palabras claves añadidas a los selectores:
+Hover: cuando pase el mouse por encima 
+Visited: Visitado.
+checked: checked.
+:first
+:focus
+timing functions.
+No usar lineales
