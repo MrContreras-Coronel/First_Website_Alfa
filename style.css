@@ -1,0 +1,226 @@
+/*Variables de Css se escriben dentro de root*/
+:root {
+    --margin-page: 60px;
+    --color-primary: #3da16c;
+    --color-action: #422F95;
+    --color-white: #FFFFFF;
+    --brownie: #AD5A5A;
+    --color-ch: red;
+    --jumbotron-image1: url("/Section.jpg");
+    --jumbo-title: 56px;
+    --textfocus-color: #70F6BE;
+    --jumbosize:600px;
+}
+
+* {
+    padding: unset; 
+    margin: unset;
+    border: unset;
+    text-decoration: none;
+    
+    /* 16 pixeles cada rem */
+    font-size: 1rem;
+    /* regular: 400, 900 black, 800 la negrota, negrita 700*/
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    /* Propiedad muy importante*/
+    box-sizing: border-box;
+    
+    outline: unset; /* esto quita las líneas de los input */
+
+   /* margin y Padding automatizados*/
+}
+
+
+body {
+  color: #1e1e1e;
+}
+
+.main-navbar{
+    display: flex; /* diaplay flex coloca los elementos horizontales */
+    justify-content: space-between; /*Coloca el espacio entre elementos*/
+    align-items: center;
+    padding: 14px var(--margin-page);
+    background-color: var(--color-primary);
+}
+
+header{
+  position: sticky;
+  top:0;
+  z-index: 50;
+}
+
+
+.main-navbar ul {
+  display:flex;
+  justify-content:space-between;
+  gap: 46px;
+  
+}
+
+.Jumbotron1{
+  align-items: center;
+  padding: var(--margin-page);
+  color: var(--color-white);
+  font-size: var(--jumbo-title);
+  text-align: center;
+  justify-content: center;
+  font-weight: 700;
+  perspective: 1000px;
+}
+
+.Jumbotron1 span{
+  color: var(--textfocus-color);
+  font-size: var(--jumbo-title);
+  font-weight: 700;
+  
+}
+
+
+.Jumbotron1P{
+  display: flex;
+  background-image: var(--jumbotron-image1); 
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+/*
+  Acuerdate de agregar efectos al img
+ Display Grid
+
+*/
+
+.jumbo2{
+  background-image: url("/assets/jumbo.jpg"); 
+  background-size: cover;
+  background-position: center;
+  height: var(--jumbosize);
+  display: flex;
+  align-items: center;
+  padding: var(--margin-page);
+  text-align: center;
+  justify-content: center;
+}
+
+.jumbo2 h1{
+  font-size: var(--jumbo-title);
+  color: var(--color-white);
+  font-weight: 600;
+  background-color: var(--color-action);
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.tarjetas{
+  display: grid;
+  grid-template-columns:  repeat(auto-fit,minmax(300px,1fr));
+  gap: 10px;
+  justify-content: center;
+}
+.tarjeta h2, .tarjeta p{
+  border-radius: 15px;
+  font-size: 1rem;
+  font-style: black;
+  font-family: Roboto, sans-serif;
+  padding: 14px 16px;
+  align-items: end;
+  justify-content: center;
+  text-align: center;
+}
+.tarjeta{
+  justify-content: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+
+
+  /*text-align: center;*/
+}
+  
+.tarjeta img{
+  padding: 14px;
+  width:100%;
+}
+
+.tarjeta button{
+  background-color: var(--color-primary);
+  color: white;
+  padding: 10px;
+  width: 50%;
+  border-radius: 12px;
+  transition: background .3s ease-in-out;
+  /*margin: 0 auto;
+  display: block; */
+
+}
+
+.tarjeta button:hover{
+  background-color: #55cb8c;
+}
+
+nav button {
+  padding: 1rem;
+  border-radius: 15px; /*No lo esta aplicando*/
+  background-color: var(--color-action);
+  color: var(--color-white);
+  transition: background .3s ease-in-out;
+}
+
+nav button:hover{
+  background-color: #2c1d70;
+}
+
+
+
+
+
+a{
+  color: var(--color-white);
+}
+
+.foo{
+  background-color: var(--color-primary);
+  height: 200px;
+  
+}
+.foo div{
+  padding: 50px;
+  align-items: center;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--color-white);
+  background-size: cover;  
+}
+.foo div h2{
+  font-weight: 500;
+  font-style: bold;
+  font-size: larger; 
+}
+.foo div {
+  padding: 30px;
+  text-align: center;
+}
+/* 
+
+para enfilarlos flex-direction 
+
+@font-face{
+font-family: fiat;
+url: (direccion fuentes)
+}
+
+Api de Google: Empleas el archivo de Google.
+
+Siempre el display flesx en el elemento padre
+crossaxis = align items
+mainaxis = justify-content
+
+
+crossaxis no tiene space-between
+
+*/
+
+
